@@ -56,6 +56,12 @@ jobs:
         id: build
         run: pnpm build
 
+      - name: 📦 Prepare for Publish
+        id: prepare-for-publish
+        run: |
+          # Copy the README.md file to the lib directory.
+          cp README.md lib
+
       - name: 📣 Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
