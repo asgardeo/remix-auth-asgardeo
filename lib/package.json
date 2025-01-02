@@ -28,7 +28,7 @@
     "dist",
     "package.json",
     "LICENSE",
-    "../README.md"
+    "README.md"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.lib.json",
