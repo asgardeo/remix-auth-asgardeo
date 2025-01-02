@@ -27,13 +27,42 @@ The Asgardeo strategy is a custom implementation of the [OAuth2Strategy](https:/
 
 ## How to use
 
+### Install the dependency
+
+Using NPM:
+
+```shell
+npm i @asgardeo/remix-auth-asgardeo
+```
+
+Using Yarn:
+
+```shell
+yarn add @asgardeo/remix-auth-asgardeo
+```
+
+Using PNPM:
+
+```shell
+pnpm add @asgardeo/remix-auth-asgardeo
+```
+
+Using Bun:
+
+```shell
+bun add @asgardeo/remix-auth-asgardeo
+```
+
 ### Create an Asgardeo organization
 
 Head over to [Asgardeo](https://wso2.com/asgardeo) and sign up for an organization.
 
 ### Register an application
 
-Follow the steps on the [Asgardeo documentation](https://wso2.com/asgardeo/docs/guides/applications/register-oidc-web-app/) to create an application and get the client ID, and client secret.
+Follow the steps on the [Asgardeo documentation](https://wso2.com/asgardeo/docs/guides/applications/register-oidc-web-app/) to create an application and get the client ID, and client secret. Provide the following values when required.
+
+ - Authorized redirect URL: `http://localhost:5173/auth/asgardeo/callback`
+ - Allowed origins: `http://localhost:5173`
 
 ### Create the Asgardeo strategy instance
 
