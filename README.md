@@ -1,5 +1,5 @@
 <h1 align="center" style="color: #343a40;margin: 20px 0;">
-  <p align="center">Remix Auth Asgardeo</p>
+  <p align="center">Remix Auth Strategy for Asgardeo</p>
 </h1>
 
 <div align="center">
@@ -40,7 +40,7 @@ Follow the steps on the [Asgardeo documentation](https://wso2.com/asgardeo/docs/
 ```ts
 // app/utils/asgardeo.server.ts
 import { Authenticator } from "remix-auth";
-import { AsgardeoStrategy } from "remix-auth-asgardeo";
+import { AsgardeoStrategy } from "@asgardeo/remix-auth-asgardeo";
 
 // Create an instance of the authenticator, pass a generic with what your
 // strategies will return and will be stored in the session
