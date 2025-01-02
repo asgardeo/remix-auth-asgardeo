@@ -2,6 +2,6 @@
 '@asgardeo/remix-auth-asgardeo': patch
 ---
 
-### Initial release 🎉
+### v0.0.2 🎉
 
-Release of the v0.1.0 of the `@asgardeo/remix-auth-asgardeo` package.
+- Add README to the released artifact.
