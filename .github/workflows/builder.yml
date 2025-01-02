@@ -1,6 +1,6 @@
-# This workflow will release the packages.
+# This workflow will build the 
 
-name: 🚀 Release
+name: 🧱 Builder
 
 on:
   push:
@@ -12,7 +12,6 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 env:
   GH_TOKEN: ${{ secrets.RELEASE_BOT_TOKEN }}
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   release:
@@ -55,20 +54,3 @@ jobs:
       - name: 🏗️ Build
         id: build
         run: pnpm build
-
-      - name: 📦 Prepare for Publish
-        id: prepare-for-publish
-        run: |
-          # Copy the README.md file to the lib directory.
-          cp README.md lib
-
-      - name: 📣 Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          title: "[Release] [GitHub Action] Update package versions"
-          publish: pnpm publish:packages
-          version: pnpm version:packages
-          commit: "[WSO2 Release] [GitHub Action] [Release] [skip ci] update package versions"
-        env:
-          GITHUB_TOKEN: ${{ env.GH_TOKEN }}
