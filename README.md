@@ -1,6 +1,22 @@
-# AsgardeoStrategy
+<h1 align="center" style="color: #343a40;margin: 20px 0;">
+  <p align="center">Remix Auth Asgardeo</p>
+</h1>
 
-The Asgardeo strategy, which extends the OAuth2Strategy, is used to authenticate users against an Asgardeo organization.
+<div align="center">
+  <a href="https://github.com/asgardeo/remix-auth-asgardeo/actions/workflows/release.yml"><img src="https://github.com/asgardeo/remix-auth-asgardeo/actions/workflows/release.yml/badge.svg" alt="🚀 Release"></a>
+  <a href="https://github.com/asgardeo/remix-auth-asgardeo/actions/workflows/builder.yml"><img src="https://github.com/asgardeo/remix-auth-asgardeo/actions/workflows/builder.yml/badge.svg" alt="🧱 Builder"></a>
+  
+  <a href="https://stackoverflow.com/questions/tagged/wso2is"><img src="https://img.shields.io/badge/Ask%20for%20help%20on-Stackoverflow-orange" alt="Stackoverflow"></a>
+  <a href="https://discord.gg/wso2"><img src="https://img.shields.io/badge/Join%20us%20on-Discord-%23e01563.svg" alt="Discord"></a>
+  <a href="https://github.com/asgardeo/remix-auth-asgardeo/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+  <a href="https://twitter.com/intent/follow?screen_name=wso2"><img src="https://img.shields.io/twitter/follow/wso2.svg?style=social&label=Follow" alt="Twitter"></a>
+</div>
+
+<br>
+
+[Remix Auth](https://remix.run/resources/remix-auth) is a flexible authentication framework for [Remix](https://remix.run/) applications that allows developers to implement various strategies for user authentication.
+
+The Asgardeo strategy is a custom implementation of the [OAuth2Strategy](https://github.com/sergiodxa/remix-auth-oauth2) designed specifically for integrating with [Asgardeo](https://wso2.com/asgardeo), an identity-as-a-service (IDaaS) platform. This strategy enables developers to authenticate users against an Asgardeo organization using OpenID Connect (OIDC).
 
 ## Supported runtimes
 
@@ -109,9 +125,13 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 };
 ```
 
-## Development
+## Contribute
+Please read [Contributing Guide](CONTRIBUTING.md) for details on how to contribute to Remix Auth Asgardeo. Refer to [General Contribution Guidelines](http://wso2.github.io/) for details on our code of conduct, and the process for submitting pull requests to us.
 
-1. Clone this repo.
-2. Run `npm install` to install the dependencies.
-3. Run `npm link` to create a symlink.
-4. Run `npm install remix-auth-asgardeo` in your remix project.
+### Reporting issues
+We encourage you to report issues, improvements, and feature requests creating [Github Issues](https://github.com/asgardeo/remix-auth-asgardeo/issues).
+
+**Important**: Please be advised that security issues MUST be reported to <a href="mailto:security@wso2.com">security@wso2com</a>, not as GitHub issues, in order to reach the proper audience. We strongly advise following the WSO2 Security Vulnerability Reporting Guidelines when reporting the security issues.
+
+## License
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
