@@ -74,7 +74,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "type": "module",
   "nx": {
     "includedScripts": [
       "build",

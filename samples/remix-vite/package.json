@@ -11,7 +11,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@asgardeo/remix-auth-asgardeo": "^0.0.1",
+    "@asgardeo/remix-auth-asgardeo": "^0.0.2",
     "@remix-run/node": "^2.9.1",
     "@remix-run/react": "^2.9.1",
     "@remix-run/serve": "^2.9.1",

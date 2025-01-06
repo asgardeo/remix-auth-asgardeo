@@ -115,7 +115,7 @@ importers:
   samples/remix-vite:
     dependencies:
       '@asgardeo/remix-auth-asgardeo':
-        specifier: ^0.0.1
+        specifier: ^0.0.2
         version: link:../../lib
       '@remix-run/node':
         specifier: ^2.9.1
